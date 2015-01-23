@@ -6,6 +6,7 @@ function beslist_getBeslistFeed($category_id) {
 header ("Content-Type:text/xml");  
     global $wpdb; 
     $posts_table = $wpdb->prefix . 'posts';
+//Thanks Devon from http://stackoverflow.com/questions/28113566/sql-query-by-ifempty-get-for-wordpress
 $sql = "
         SELECT $wpdb->posts.ID, $wpdb->posts.post_title, $wpdb->posts.post_content, $wpdb->posts.post_excerpt, $wpdb->posts.post_name
         FROM $wpdb->posts
