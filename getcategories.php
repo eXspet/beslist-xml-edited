@@ -1,4 +1,5 @@
   <?php
+//Thanks Suman.hassan95 from http://stackoverflow.com/questions/21009516/get-categories-from-wordpress-woocommerce
   $taxonomy     = 'product_cat';
   $orderby      = 'name';  
   $show_count   = 0;      // 1 for yes, 0 for no
